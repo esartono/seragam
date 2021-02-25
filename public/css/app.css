@@ -27942,6 +27942,27 @@ a.text-muted:hover {
   background-color: #391F1B;
 }
 
+.btn-group-justified-special {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+.btn-group-justified-special .btn,
+.btn-group-justified-special .btn-group {
+  float: none;
+  display: table-cell;
+  width: 1%;
+}
+.btn-group-justified-special .btn .btn,
+.btn-group-justified-special .btn-group .btn {
+  width: 100%;
+}
+.btn-group-justified-special .btn .dropdown-menu,
+.btn-group-justified-special .btn-group .dropdown-menu {
+  left: auto;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

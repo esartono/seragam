@@ -26,3 +26,22 @@ $warna4: #A190A0;
 .navbar-rahmat {
     background-color:$warna3;
 }
+
+.btn-group-justified-special {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    .btn,
+    .btn-group {
+        float: none;
+        display: table-cell;
+        width: 1%;
+        .btn {
+            width: 100%;
+        }
+        .dropdown-menu {
+            left: auto;
+        }
+    }
+}

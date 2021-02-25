@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () { return view('welcome'); });
+Route::get('/order', function () { return view('order'); });
+Route::get('/order/1', function () { return view('step.1'); });
+Route::get('/order/2', function () { return view('step.2'); });
+Route::get('/order/3', function () { return view('step.3'); });
 
 Auth::routes();
 

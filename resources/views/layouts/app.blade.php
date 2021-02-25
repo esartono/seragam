@@ -21,18 +21,13 @@
 </head>
 <body class="hold-transition layout-top-nav layout-footer-fixed">
     <div class="wrapper">
-    
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand-md navbar-dark navbar-rahmat">
         <div class="container">
           <a href="/" class="navbar-brand">
             <img src="/images/logo1.png" alt="Rahmat Jeans" class="brand-image" style="height: 55px !important">
+            <span class="text-white text-xl font-weight-bold">RAHMAT JEANS</span>
           </a>
-    
-          <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
           <!-- Right navbar links -->
           <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto" style="font-size: larger;font-weight: bold;">
             <li class="nav-item">
@@ -55,7 +50,7 @@
         <div class="content">
           <div class="container">
             <div class="row mb-3"></div>
-            <div class="row">
+            <div class="row justify-content-center">
               @yield('content')
             </div>
             <!-- /.row -->
