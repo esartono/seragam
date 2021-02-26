@@ -19,7 +19,7 @@
         </h4>
       </div>
       <hr>
-      <a href="/order/3" class="btn btn-lg btn-success col-md-7 p-3 float-right">Lanjut</a>
+      <a href="/" class="btn btn-lg btn-success col-md-7 p-3 float-right">Selesai</a>
     </div>
   </div>
   <!-- /.card-body -->
