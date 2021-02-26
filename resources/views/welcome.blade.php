@@ -65,10 +65,9 @@
             <h3 class="mb-0">
             </h3>
           </div>
-          <p>
-            Harga Jasa Jahit Rp. 160.000,- / stel <br>
+          <h3>
             Harga Jasa Jahit paket lengkap Rp. 875.000,-
-          </p>
+          </h3>
 
           <div class="mt-4">
             <a href="order" class="btn btn-primary btn-lg btn-flat p-3">
