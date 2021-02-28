@@ -31,14 +31,22 @@
           <!-- Right navbar links -->
           <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto" style="font-size: larger;font-weight: bold;">
             <li class="nav-item">
-                <a href="/" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="/contact" class="nav-link">Contact</a>
-              </li>
-            <li class="nav-item">
-                <a href="/contact" class="nav-link">Login</a>
+              <a href="/" class="nav-link">Home</a>
             </li>
+            <li class="nav-item">
+              <a href="/contact" class="nav-link">Contact</a>
+            </li>
+            @guest
+              @if (Route::has('login'))
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                </li>
+              @endif
+            @else
+            <li class="nav-item">
+              <a href="/" class="nav-link">{{ Auth::user()->name }}</a>
+            </li>
+            @endguest
           </ul>
         </div>
       </nav>

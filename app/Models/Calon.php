@@ -13,6 +13,8 @@ class Calon extends Model
         'sekolah',
         'telepon',
         'alamat',
+        'atasan',
+        'bawahan',
         'aktif',
         'lunas',
         'status',
