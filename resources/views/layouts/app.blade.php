@@ -25,7 +25,7 @@
       <nav class="main-header navbar navbar-expand-md navbar-dark navbar-rahmat">
         <div class="container">
           <a href="/" class="navbar-brand">
-            <img src="/images/logo1.png" alt="Rahmat Jeans" class="brand-image" style="height: 55px !important">
+            <img src="/images/logo.jpeg" alt="Rahmat Jeans" class="brand-image" style="height: 55px !important; border-radius: 50%;">
             <span class="text-white text-xl font-weight-bold">RAHMAT JEANS</span>
           </a>
           <!-- Right navbar links -->
