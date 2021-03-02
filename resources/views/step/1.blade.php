@@ -10,6 +10,9 @@
     <div class="row">
       <div class="col-12 col-sm-6">
         <h2 class="my-3">Pilih Ukuran yang sesuai</h2>
+        @if ($errors->any())
+          <div class="alert alert-danger"> Anda belum memilih Ukuran</div>
+        @endif
         <hr>
         <div class="btn-group btn-group-toggle btn-group-special" data-toggle="buttons" style="display: flex; ">
           <label class="btn btn-warning text-center" style="flex: 1">
