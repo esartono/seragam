@@ -11,44 +11,47 @@
         </div>
       </div>
       <div class="card-body">
+        <form method="POST" action="{{ route('calons.store') }}">
+        @csrf
         <div class="form-group">
           <label for="inputName">Nama Lengkap Siswa</label>
-          <input type="text" id="inputName" class="form-control">
+          <input type="text" name="name" class="form-control" required>
         </div>
         <div class="form-group">
           <label for="inputStatus">Jenjang Sekolah</label>
-          <select class="form-control custom-select">
+          <select class="form-control custom-select" name="jenjang" required>
             <option selected disabled>Pilih Jenjang</option>
-            <option>SMP</option>
-            <option>SMA</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
           </select>
         </div>
         <div class="form-group">
           <label for="inputKelas">Kelas</label>
-          <input type="text" id="inputKelas" class="form-control">
+          <input type="text" name="kelas" class="form-control" required>
         </div>
         <div class="form-group">
           <label for="inputStatus">Jenis Kelamin</label>
-          <select class="form-control custom-select">
+          <select class="form-control custom-select" name="jk" required>
             <option selected disabled>Pilih Kelamin</option>
-            <option>Laki-laki</option>
-            <option>Perempuan</option>
+            <option value="L">Laki-laki</option>
+            <option value="P">Perempuan</option>
           </select>
         </div>
         <div class="form-group">
           <label for="inputTelepon">No. Telepon/HP</label>
-          <input type="text" id="inputTelepon" class="form-control">
+          <input type="text" name="telepon" class="form-control" required>
         </div>
         <div class="form-group">
           <label for="inputAlamat">Alamat</label>
-          <input type="text" id="inputAlamat" class="form-control">
+          <input type="text" name="alamat" class="form-control" required>
         </div>
+        <a href="/" class="btn btn-lg btn-secondary col-md-4 p-3">Batal</a>
+        <button type="submit" class="btn btn-lg btn-success col-md-4 p-3 float-right">Lanjut</button>
       </div>
+    </form>
       <!-- /.card-body -->
     </div>
     <!-- /.card -->
-    <a href="/" class="btn btn-lg btn-secondary col-md-4 p-3">Batal</a>
-    <a href="/order/1" class="btn btn-lg btn-success col-md-4 p-3 float-right">Lanjut</a>
     {{-- <input type="submit" value="Lanjut" class="btn btn-success col-md-4 float-right"> --}}
   </div>
 @endsection

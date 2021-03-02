@@ -13,6 +13,7 @@ class Calon extends Model
         'sekolah',
         'telepon',
         'alamat',
+        'jenjang',
         'atasan',
         'bawahan',
         'aktif',
@@ -20,5 +21,6 @@ class Calon extends Model
         'status',
         'no_order',
         'no_reg',
+        'step',
     ];
 }

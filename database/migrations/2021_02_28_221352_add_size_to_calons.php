@@ -14,8 +14,10 @@ class AddSizeToCalons extends Migration
     public function up()
     {
         Schema::table('calons', function (Blueprint $table) {
-            $table->string('atasan')->after('alamat');
+            $table->string('jenjang')->after('alamat');
+            $table->string('atasan')->after('jenjang');
             $table->string('bawahan')->after('atasan');
+            $table->smallInteger('step')->after('bawahan');
         });
     }
 
@@ -27,8 +29,10 @@ class AddSizeToCalons extends Migration
     public function down()
     {
         Schema::table('calons', function (Blueprint $table) {
+            $table->dropColumn('jenjang');
             $table->dropColumn('atasan');
             $table->dropColumn('bawahan');
+            $table->dropColumn('step');
         });
     }
 }

@@ -4,9 +4,41 @@
 <div class="col-md-6">
   <div class="card card-solid">
     <div class="card-body">
-      <h2>Order Nomor : 2102262345</h2>
-      <hr>
-      <h4>Telah kami terima, untuk selanjutnya silahkan transfer ke rekening :</h4>
+      <table class="table table-bordered col-md-8 offset-md-2">
+        <tr>
+          <td>No. Order</td>
+          <td><b>{{ $calon->no_order }}</b></td>
+        </tr>
+        <tr>
+          <td>Nama Siswa</td>
+          <td>{{ $calon->name }}</td>
+        </tr>
+        <tr>
+          <td>Jenjang & Kelas</td>
+          <td>{{ $calon->jenjang }} & {{ $calon->kelas }}</td>
+        </tr>
+        <tr>
+          <td>Ukuran Baju</td>
+          <td>{{ $calon->atasan }}</td>
+        </tr>
+        <tr>
+          @if ($jk === 'L')
+            <td>Ukuran Celana</td>
+          @endif
+          @if ($jk === 'P')
+            <td>Ukuran Rok</td>
+          @endif
+          <td>{{ $calon->bawahan }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- /.card-body -->
+</div>
+<div class="col-md-6">
+  <div class="card card-solid">
+    <div class="card-body">
+      <h5>Tahap selanjutnya silahkan transfer ke rekening :</h5>
       <div class="bg-yellow py-3 px-3 mt-4">
         <h2 class="text-center font-weight-bold">
           Rp. 875.000,-

@@ -19,7 +19,8 @@ Route::get('/order/1', function () { return view('step.1'); });
 Route::get('/order/2', function () { return view('step.2'); });
 Route::get('/order/3', function () { return view('step.3'); });
 
-Route::resource('calons', 'CalonController');
+Route::resource('calons', 'App\Http\Controllers\CalonController');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
