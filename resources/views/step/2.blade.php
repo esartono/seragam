@@ -51,12 +51,7 @@
       </div>
       <div class="col-12 col-sm-6">
         <div class="col-12">
-          @if ($jk === 'L')
-            <img src="{{URL::asset('/images/RJ3.PNG')}}" class="product-image" alt="Product Image">
-          @endif
-          @if ($jk === 'P')
-            <img src="{{URL::asset('/images/RJ4.PNG')}}" class="product-image" alt="Product Image">
-          @endif
+          <img src="{{URL::asset('/images/BAWAH/'.$jenjang.' - '.$jk.'.png')}}" class="product-image" alt="Product Image">
         </div>
       </div>
     </div>

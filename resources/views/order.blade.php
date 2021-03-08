@@ -18,11 +18,11 @@
           <input type="text" name="name" class="form-control" required>
         </div>
         <div class="form-group">
-          <label for="inputStatus">Jenjang Sekolah</label>
+          <label for="inputStatus">Sekolah</label>
           <select class="form-control custom-select" name="jenjang" required>
-            <option selected disabled>Pilih Jenjang</option>
-            <option value="SMP">SMP</option>
-            <option value="SMA">SMA</option>
+            <option selected disabled>Pilih Sekolah</option>
+            <option value="SMP">SMPIT NFBS - Ciapus</option>
+            <option value="SMA">SMAIT NFBS - Ciapus</option>
           </select>
         </div>
         <div class="form-group">

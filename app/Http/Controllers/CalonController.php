@@ -22,11 +22,12 @@ class CalonController extends Controller
         $calon = Calon::find($id);
         $order = $calon->no_order;
         $jk = $calon->jk;
+        $jenjang = $calon->jenjang;
 
         if($calon->step === 3) {
             return view('step.'.$calon->step, compact('order', 'jk', 'calon'));
         }
-        return view('step.'.$calon->step, compact('order', 'jk'));
+        return view('step.'.$calon->step, compact('order', 'jk', 'jenjang'));
     }
 
     public function update($order, Request $request)

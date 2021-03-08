@@ -7,7 +7,7 @@
         <div class="col-12 col-sm-7">
           <div class="col-12">
             {{-- <img src="images/SMP4.jpeg" class="product-image" alt="Product Image"> --}}
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/N5sb3Uf44X8?modestbranding=1&autoplay=1&loop=1&rel=0&showinfo=0" frameborder="0"></iframe>
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/nCUjIS6Gsww?modestbranding=1&autoplay=1&loop=1&rel=0" frameborder="0"></iframe>
           </div>
         </div>
         <div class="col-12 col-sm-5">
