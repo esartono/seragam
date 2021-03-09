@@ -15,12 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { return view('welcome'); });
 Route::get('/order', function () { return view('order'); });
-Route::get('/order/1', function () { return view('step.1'); });
-Route::get('/order/2', function () { return view('step.2'); });
-Route::get('/order/3', function () { return view('step.3'); });
+Route::get('/kontak', function () { return view('kontak'); });
 
 Route::resource('calons', 'App\Http\Controllers\CalonController');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

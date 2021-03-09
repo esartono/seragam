@@ -34,7 +34,7 @@
               <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="/contact" class="nav-link">Contact</a>
+              <a href="/kontak" class="nav-link">Kontak</a>
             </li>
             @guest
               @if (Route::has('login'))
@@ -43,15 +43,22 @@
                 </li>
               @endif
             @else
-            <li class="nav-item">
-              <a href="/" class="nav-link">{{ Auth::user()->name }}</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();">
+                  {{ __('Logout') }}
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                  @csrf
+                </form>
+              </li>
             @endguest
           </ul>
         </div>
       </nav>
       <!-- /.navbar -->
-    
+
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Main content -->
