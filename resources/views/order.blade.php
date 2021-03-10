@@ -14,6 +14,10 @@
         <form method="POST" action="{{ route('calons.store') }}">
         @csrf
         <div class="form-group">
+          <label for="inputName">Nomor Pendaftaran</label>
+          <input type="text" name="no_reg" class="form-control" required>
+        </div>
+        <div class="form-group">
           <label for="inputName">Nama Lengkap Siswa</label>
           <input type="text" name="name" class="form-control" required>
         </div>

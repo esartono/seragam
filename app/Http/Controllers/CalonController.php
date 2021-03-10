@@ -9,7 +9,16 @@ class CalonController extends Controller
 {
     public function store(Request $request)
     {
-        $calon = $request->only('name', 'kelas', 'jk', 'jenjang', 'telepon', 'alamat') + ['no_order' => now()->format('ymdHis'), 'atasan' => 'S', 'bawahan' => 'S', 'step' => 1, 'aktif' => 1, 'lunas' => 0, 'status' => 'order'];
+        $this->validate($request, [
+            'no_reg' => 'required',
+            'name' => 'required',
+            'kelas' => 'required',
+            'jk' => 'required',
+            'jenjang' => 'required',
+            'telepon' => 'required',
+        ]);
+
+        $calon = $request->only('no_reg', 'name', 'kelas', 'jk', 'jenjang', 'telepon', 'alamat') + ['no_order' => now()->format('ymdHis'), 'atasan' => 'S', 'bawahan' => 'S', 'step' => 1, 'aktif' => 1, 'lunas' => 0, 'status' => 'order'];
         $calon = Calon::create($calon);
 
         $no_order = $calon->no_order;
