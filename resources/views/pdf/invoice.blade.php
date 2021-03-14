@@ -124,6 +124,11 @@
       <p>Pembayaran dilakukan melalui transfer ke rekening :</p>
       <h2>BCA 8691532232</h2>
       <h3>a.n. Ade Purnama</h3>
+      <hr>
+      <h3> Pertanyaan lebih lanjut dapat menghubungi :<br>
+        <b>Rahmat Jeans (+62 822 7888 9009)<br>
+          Hendri Umar (+62 877 7415 1039)</b>
+      </h3>
     </td>
   </tr>
 </table>

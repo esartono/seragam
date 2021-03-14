@@ -4,7 +4,10 @@
 <div class="col-md-6">
   <div class="card card-solid">
     <div class="card-body">
-      <table class="table table-bordered col-md-8 offset-md-2">
+      <table class="table table-bordered">
+        <tr>
+          <th colspan="2">Data Input</th>
+        </tr>
         <tr>
           <td>No. Order</td>
           <td><b>{{ $calon->no_order }}</b></td>
@@ -15,7 +18,7 @@
         </tr>
         <tr>
           <td>Sekolah</td>
-          <td>{{ $calon->jenjang }}IT - Bogor</td>
+          <td>{{ $calon->jenjang }}IT NFBS - Bogor</td>
         </tr>
         <tr>
           <td>Kelas</td>
@@ -33,6 +36,10 @@
             <td>Ukuran Rok</td>
           @endif
           <td>{{ $calon->bawahan }}</td>
+        </tr>
+        <tr>
+          <td>Batas waktu pembayaran</td>
+          <td><b>{{ Carbon\Carbon::parse($calon->created_at)->addDay(7)->format('d/m/Y') }}</b></td>
         </tr>
         <tr>
           <td colspan="2">
@@ -64,7 +71,14 @@
         </h4>
       </div>
       <hr>
-      <a href="/" class="btn btn-lg btn-success col-md-7 p-3 float-right">Selesai</a>
+      <h4>
+        <small>
+          Konfirmasi pembayaran dan pertanyaan lebih lanjut dapat menghubungi : <br>
+          <b>Rahmat Jeans (+62 822 7888 9009) <br>
+          Hendri Umar (+62 877 7415 1039)</b>
+        </small>
+      </h4>
+      <a href="/" class="btn btn-lg btn-success col-md-6 offset-md-3 p-3 mt-3">Selesai</a>
     </div>
   </div>
   <!-- /.card-body -->
