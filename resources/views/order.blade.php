@@ -14,7 +14,7 @@
         <form method="POST" action="{{ route('calons.store') }}">
         @csrf
         <div class="form-group">
-          <label for="inputName">Nomor Pendaftaran</label>
+          <label for="inputName">Nomor Pendaftaran PSB</label>
           <input type="text" name="no_reg" class="form-control" required>
         </div>
         <div class="form-group">
@@ -25,8 +25,8 @@
           <label for="inputStatus">Sekolah</label>
           <select class="form-control custom-select" name="jenjang" required>
             <option selected disabled>Pilih Sekolah</option>
-            <option value="SMP">SMPIT NFBS - Ciapus</option>
-            <option value="SMA">SMAIT NFBS - Ciapus</option>
+            <option value="SMP">SMPIT NFBS - Bogor</option>
+            <option value="SMA">SMAIT NFBS - Bogor</option>
           </select>
         </div>
         <div class="form-group">
@@ -44,6 +44,10 @@
         <div class="form-group">
           <label for="inputTelepon">No. Telepon/HP</label>
           <input type="text" name="telepon" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input type="email" name="email" class="form-control" required>
         </div>
         <div class="form-group">
           <label for="inputAlamat">Alamat</label>

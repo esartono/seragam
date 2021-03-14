@@ -14,8 +14,12 @@
           <td>{{ $calon->name }}</td>
         </tr>
         <tr>
-          <td>Jenjang & Kelas</td>
-          <td>{{ $calon->jenjang }} & {{ $calon->kelas }}</td>
+          <td>Sekolah</td>
+          <td>{{ $calon->jenjang }}IT - Bogor</td>
+        </tr>
+        <tr>
+          <td>Kelas</td>
+          <td>{{ $calon->kelas }}</td>
         </tr>
         <tr>
           <td>Ukuran Baju</td>
@@ -29,6 +33,15 @@
             <td>Ukuran Rok</td>
           @endif
           <td>{{ $calon->bawahan }}</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <form method="POST" action="{{ route('pdf') }}">
+              @csrf
+              <input type="hidden" name="order" value="{{ $calon->no_order }}">
+              <button type="submit" class="btn btn-block btn-danger float-right">Cetak Invoice</button>
+            </form>
+          </td>
         </tr>
       </table>
     </div>

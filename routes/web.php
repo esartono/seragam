@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () { return view('welcome'); });
 Route::get('/order', function () { return view('order'); });
 Route::get('/kontak', function () { return view('kontak'); });
+Route::post('/pdf', [App\Http\Controllers\CalonController::class, 'createPDF'])->name('pdf');
 
 Route::resource('calons', 'App\Http\Controllers\CalonController');
 

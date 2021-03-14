@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use QrCode;
 
 class Calon extends Model
 {
@@ -12,6 +13,7 @@ class Calon extends Model
         'jk',
         'sekolah',
         'telepon',
+        'email',
         'alamat',
         'jenjang',
         'atasan',
@@ -23,4 +25,9 @@ class Calon extends Model
         'no_reg',
         'step',
     ];
+
+    public function getQrcodeAttribute()
+    {
+        return base64_encode(QrCode::format('svg')->size(100)->errorCorrection('H')->generate($this->no_order));
+    }
 }

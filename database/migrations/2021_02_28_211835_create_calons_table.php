@@ -22,6 +22,7 @@ class CreateCalonsTable extends Migration
             $table->string('jk');
             $table->string('sekolah')->nullable();
             $table->string('telepon');
+            $table->string('email');
             $table->string('alamat');
             $table->boolean('aktif');
             $table->boolean('lunas');
