@@ -12,6 +12,10 @@
           <td>No. Order</td>
           <td><b>{{ $calon->no_order }}</b></td>
         </tr>
+	<tr>
+	  <td>No. Pendaftaran PSB</td>
+	  <td><b>{{ $calon->no_reg }}</b></td>
+	</tr>
         <tr>
           <td>Nama Siswa</td>
           <td>{{ $calon->name }}</td>

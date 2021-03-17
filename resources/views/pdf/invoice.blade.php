@@ -79,8 +79,9 @@
     <td width="60%">
       Ditujukan untuk : <br>
       Orangtua/Wali dari <br>
-      <b>{{ $calon->name }} - ({{ $calon->no_reg }})</b> <br>
-      {{ $calon->alamat }} <br>
+      <b>{{ $calon->name }} <br><br>
+      No. Pendaftaran : {{ $calon->no_reg }})</b> <br>
+      Alamat : {{ $calon->alamat }} <br>
       No. Telpon : {{ $calon->telepon }}
     </td>
     <td align="right">
