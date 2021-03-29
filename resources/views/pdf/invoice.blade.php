@@ -89,7 +89,11 @@
       Tanggal : {{ Carbon\Carbon::parse($calon->created_at)->format('d/m/Y') }}<br>
       <br>
       Pembayaran paling lambat: <br>
-      <b>{{ Carbon\Carbon::parse($calon->created_at)->addDay(7)->format('d/m/Y') }}</b>
+      @if($lewat == 'lewat')
+        <b>{{ Carbon\Carbon::parse($calon->created_at)->addDay(7)->format('d/m/Y') }}</b>
+      @else
+        <b>14/04/2021</b>
+      @endif
     </td>
   </tr>
 </table>
@@ -111,11 +115,6 @@
     <td align="right">Rp. 875.000,-</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
     <th colspan="2">TOTAL</th>
     <th align="right">Rp. 875.000,-</th>
   </tr>
@@ -123,14 +122,12 @@
     <td colspan="3">
       <i>Terbilang : Delapan Ratus Tujuh Puluh Lima Ribu Rupiah</i>
       <p>Pembayaran dilakukan melalui transfer ke rekening :</p>
-      <h2>BNI 0607451808</h2>
-      <h3>a.n. Soffatul Azizah</h3>
+      <h2>BNI 0607451808 <small>&nbsp;&nbsp; -- &nbsp;&nbsp; a.n. Soffatul Azizah</small></h2>
       <hr>
-      <h3>Pembayaran maksimal sampai dengan tanggal 14 April 2021</h3>
-      <h3> Pertanyaan lebih lanjut dapat menghubungi :<br>
+      <h4> Pertanyaan lebih lanjut dapat menghubungi :<br>
         <b>Rahmat Jeans (+62 822 7888 9009)<br>
           Hendri Umar (+62 877 7415 1039)</b>
-      </h3>
+      </h4>
     </td>
   </tr>
 </table>

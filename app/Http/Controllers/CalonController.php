@@ -36,7 +36,8 @@ class CalonController extends Controller
 
     public function edit($id)
     {
-        $calon = Calon::find($id);
+
+        $calon = Calon::find($id)->append('lewat');
         $order = $calon->no_order;
         $jk = $calon->jk;
         $jenjang = $calon->jenjang;

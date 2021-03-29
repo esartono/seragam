@@ -43,7 +43,13 @@
         </tr>
         <tr>
           <td>Batas waktu pembayaran</td>
-          <td><b>{{ Carbon\Carbon::parse($calon->created_at)->addDay(7)->format('d/m/Y') }}</b></td>
+          <td>
+            @if($calon->lewat)
+              <b>{{ Carbon\Carbon::parse($calon->created_at)->addDay(7)->format('d/m/Y') }}</b>
+            @else
+              <b>14/04/2021</b>
+            @endif
+          </td>
         </tr>
         <tr>
           <td colspan="2">
@@ -78,7 +84,6 @@
       <h4>
         <small>
           <ul>
-            <li>Pembayaran maksimal sampai dengan tanggal <b>14 April 2021</b></li>
             <li>Konfirmasi pembayaran dan pertanyaan lebih lanjut dapat menghubungi :
               <ul>
                 <li><b>Rahmat Jeans (+62 822 7888 9009)</b></li>
