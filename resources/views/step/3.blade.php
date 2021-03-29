@@ -12,10 +12,10 @@
           <td>No. Order</td>
           <td><b>{{ $calon->no_order }}</b></td>
         </tr>
-	<tr>
-	  <td>No. Pendaftaran PSB</td>
-	  <td><b>{{ $calon->no_reg }}</b></td>
-	</tr>
+        <tr>
+          <td>No. Pendaftaran PSB</td>
+          <td><b>{{ $calon->no_reg }}</b></td>
+        </tr>
         <tr>
           <td>Nama Siswa</td>
           <td>{{ $calon->name }}</td>
@@ -70,16 +70,22 @@
       </div>
       <div class="bg-gray py-2 px-3">
         <h4 class="mb-0 text-center">
-          BCA 8691532232
-          <br><small>a.n. Ade Purnama</small>
+          BNI 0607451808
+          <br><small>a.n. Soffatul Azizah</small>
         </h4>
       </div>
       <hr>
       <h4>
         <small>
-          Konfirmasi pembayaran dan pertanyaan lebih lanjut dapat menghubungi : <br>
-          <b>Rahmat Jeans (+62 822 7888 9009) <br>
-          Hendri Umar (+62 877 7415 1039)</b>
+          <ul>
+            <li>Pembayaran maksimal sampai dengan tanggal <b>14 April 2021</b></li>
+            <li>Konfirmasi pembayaran dan pertanyaan lebih lanjut dapat menghubungi :
+              <ul>
+                <li><b>Rahmat Jeans (+62 822 7888 9009)</b></li>
+                <li><b>Hendri Umar (+62 877 7415 1039)</b></li>
+              </ul>
+            </li>
+          </ul>
         </small>
       </h4>
       <a href="/" class="btn btn-lg btn-success col-md-6 offset-md-3 p-3 mt-3">Selesai</a>

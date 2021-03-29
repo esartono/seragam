@@ -25,10 +25,10 @@
             <td>No. Order</td>
             <td><b>{{ $no_order }}</b></td>
         </tr>
-	<tr>
-	   <td>No. Pendaftaran PSB</td>
-	   <td><b>{{ $no_reg }}</b></td>
-	</tr>
+        <tr>
+            <td>No. Pendaftaran PSB</td>
+            <td><b>{{ $no_reg }}</b></td>
+        </tr>
         <tr>
             <td>Nama Siswa</td>
             <td>{{ $name }}</td>

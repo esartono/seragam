@@ -123,9 +123,10 @@
     <td colspan="3">
       <i>Terbilang : Delapan Ratus Tujuh Puluh Lima Ribu Rupiah</i>
       <p>Pembayaran dilakukan melalui transfer ke rekening :</p>
-      <h2>BCA 8691532232</h2>
-      <h3>a.n. Ade Purnama</h3>
+      <h2>BNI 0607451808</h2>
+      <h3>a.n. Soffatul Azizah</h3>
       <hr>
+      <h3>Pembayaran maksimal sampai dengan tanggal 14 April 2021</h3>
       <h3> Pertanyaan lebih lanjut dapat menghubungi :<br>
         <b>Rahmat Jeans (+62 822 7888 9009)<br>
           Hendri Umar (+62 877 7415 1039)</b>
