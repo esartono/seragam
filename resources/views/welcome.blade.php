@@ -29,8 +29,10 @@
             </a>
           </div>
           <hr>
+          <h5>Konfirmasi Pembayaran dapat menghubungi : Ibu Shofa (+62 857 1708 7766)</h5>
+          <hr>
           <h5 class="mt-2">
-            Konfirmasi pembayaran bisa menghubungi :
+            Layanan Komplain dapat menghubungi :
             <div class="mt-3"></div>
             <b>Rahmat Jeans (+62 822 7888 9009)
             <div class="mt-1"></div>

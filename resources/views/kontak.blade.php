@@ -42,6 +42,8 @@
                 Hendri Umar <br>
                 <small>+62 877 7415 1039</small>
             </h4>
+            <hr>
+            <h4>Konfirmasi Pembayaran dapat menghubungi : Ibu Shofa (+62 857 1708 7766)</h4>
         </div>
     </div>
 </div>
