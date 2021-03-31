@@ -122,12 +122,13 @@
     <td colspan="3">
       <i>Terbilang : Delapan Ratus Tujuh Puluh Lima Ribu Rupiah</i>
       <p>Pembayaran dilakukan melalui transfer ke rekening :</p>
-      <h2>BNI 0607451808 <small>&nbsp;&nbsp; -- &nbsp;&nbsp; a.n. Soffatul Azizah</small></h2>
+      <h2>Bank Syariah Indonesia (BSI) 7102878102 <small>&nbsp;&nbsp; -- &nbsp;&nbsp; a.n. Mohammad Alfian Musthofa</small></h2>
       <hr>
-      <h4> Pertanyaan lebih lanjut dapat menghubungi :<br>
+      <h5>Konfirmasi Pembayaran dapat menghubungi : Ibu Shofa (+62 857 1708 7766)</h5>
+      <h5>Layanan komplain dapat menghubungi :<br>
         <b>Rahmat Jeans (+62 822 7888 9009)<br>
           Hendri Umar (+62 877 7415 1039)</b>
-      </h4>
+      </h5>
     </td>
   </tr>
 </table>

@@ -76,15 +76,16 @@
       </div>
       <div class="bg-gray py-2 px-3">
         <h4 class="mb-0 text-center">
-          BNI 0607451808
-          <br><small>a.n. Soffatul Azizah</small>
+          Bank Syariah Indonesia (BSI) 7102878102
+          <br><small>a.n. Mohammad Alfian Musthofa</small>
         </h4>
       </div>
       <hr>
       <h4>
         <small>
           <ul>
-            <li>Konfirmasi pembayaran dan pertanyaan lebih lanjut dapat menghubungi :
+            <li>Konfirmasi pembayaran dapat menghubungi : <b>Ibu Shofa (+62 857 1708 7766)</b></li>
+            <li>Layanan komplain dapat menghubungi :
               <ul>
                 <li><b>Rahmat Jeans (+62 822 7888 9009)</b></li>
                 <li><b>Hendri Umar (+62 877 7415 1039)</b></li>
