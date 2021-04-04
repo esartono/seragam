@@ -23,3 +23,6 @@ Route::resource('calons', 'App\Http\Controllers\CalonController');
 Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/lunas', [App\Http\Controllers\HomeController::class, 'lunas'])->name('lunas');
+Route::post('/hapus', [App\Http\Controllers\HomeController::class, 'hapus'])->name('hapus');
+Route::get('/eksport', [App\Http\Controllers\HomeController::class, 'eksport'])->name('eksport');

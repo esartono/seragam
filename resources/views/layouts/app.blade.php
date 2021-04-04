@@ -77,9 +77,10 @@
       <!-- Main Footer -->
       <footer class="main-footer">
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2021 <a href="/">Eko Sartono</a></strong>
+        <strong>Copyright &copy; 2021 <a href="https://noteseko.blogspot.com" target="_blank">noteseko.blogspot.com</a></strong>
       </footer>
     </div>
     <!-- ./wrapper -->
     </body>
+    @yield('script')
 </html>
