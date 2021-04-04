@@ -31,10 +31,17 @@
           <!-- Right navbar links -->
           <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto" style="font-size: larger;font-weight: bold;">
             <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
+              @auth
+                <a href="/home" class="nav-link">Home</a>
+              @endauth
+              @guest
+                <a href="/" class="nav-link">Home</a>
+              @endguest
             </li>
             <li class="nav-item">
-              <a href="/kontak" class="nav-link">Kontak</a>
+              @guest
+                <a href="/kontak" class="nav-link">Kontak</a>
+              @endguest
             </li>
             @guest
               @if (Route::has('login'))
