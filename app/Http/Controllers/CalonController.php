@@ -26,7 +26,17 @@ class CalonController extends Controller
             'email' => 'required',
         ]);
 
-        $calon = $request->only('no_reg', 'name', 'kelas', 'jk', 'jenjang', 'telepon', 'email', 'alamat') + ['no_order' => now()->format('ymdHis'), 'atasan' => 'S', 'bawahan' => 'S', 'step' => 1, 'aktif' => 1, 'lunas' => 0, 'status' => 'order'];
+        $sekolah = $request->jenjang.'IT Nurul Fikri Boarding School - Bogor';
+        $calon = $request->only('no_reg', 'name', 'kelas', 'jk', 'jenjang', 'telepon', 'email', 'alamat') + [
+            'no_order' => now()->format('ymdHis'),
+            'sekolah' => $sekolah,
+            'atasan' => 'S',
+            'bawahan' => 'S',
+            'step' => 1,
+            'aktif' => 1,
+            'lunas' => 0,
+            'status' => 'order'
+        ];
         $calon = Calon::create($calon);
 
         $no_order = $calon->no_order;
@@ -36,13 +46,13 @@ class CalonController extends Controller
 
     public function edit($id)
     {
-
         $calon = Calon::find($id)->append('lewat');
         $order = $calon->no_order;
         $jk = $calon->jk;
         $jenjang = $calon->jenjang;
+        $step = $calon->step;
 
-        if($calon->step === 3) {
+        if($step === 3 || $step === '3') {
             view()->share('calon',$calon->append('qrcode'));
             $pdf = PDF::loadView('pdf.invoice', $calon);
             $content = $pdf->download()->getOriginalContent();
@@ -55,9 +65,9 @@ class CalonController extends Controller
                 ->attachData($pdf->output(), "invoice.pdf");
                 });
 
-            return view('step.'.$calon->step, compact('order', 'jk', 'calon'));
+            return view('step.'.$step, compact('order', 'jk', 'calon'));
         }
-        return view('step.'.$calon->step, compact('order', 'jk', 'jenjang'));
+        return view('step.'.$step, compact('order', 'jk', 'jenjang'));
     }
 
     public function update($order, Request $request)
@@ -71,11 +81,23 @@ class CalonController extends Controller
         if($request->step === '2') {
             $ukuran = $request->size_option;
             $calon->update(['bawahan' => $ukuran, 'step' => 3]);
+
+            if($ukuran === 'custom') {
+                $calon->update(['bawahan' => $ukuran, 'step' => 3, 'ket_bawah' => $request->keterangan]);
+            }
+
         }
 
         if($request->step === '1') {
             $ukuran = $request->size_option;
             $calon->update(['atasan' => $ukuran, 'step' => 2]);
+
+            if($ukuran === 'datang') {
+                $calon->update(['atasan' => $ukuran, 'bawahan' => $ukuran, 'step' => 3]);
+            }
+            if($ukuran === 'custom') {
+                $calon->update(['atasan' => $ukuran, 'step' => 2, 'ket_atas' => $request->keterangan]);
+            }
         }
 
         return redirect()->route('calons.edit', compact('calon'));

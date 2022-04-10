@@ -17,7 +17,9 @@ class AddSizeToCalons extends Migration
             $table->string('jenjang')->after('alamat');
             $table->string('atasan')->after('jenjang');
             $table->string('bawahan')->after('atasan');
-            $table->smallInteger('step')->after('bawahan');
+            $table->string('ket_atas')->nullable()->after('bawahan');
+            $table->string('ket_bawah')->nullable()->after('ket_atas');
+            $table->smallInteger('step')->after('keterangan');
         });
     }
 
@@ -32,6 +34,7 @@ class AddSizeToCalons extends Migration
             $table->dropColumn('jenjang');
             $table->dropColumn('atasan');
             $table->dropColumn('bawahan');
+            $table->dropColumn('keterangan');
             $table->dropColumn('step');
         });
     }

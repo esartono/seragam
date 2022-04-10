@@ -19,12 +19,19 @@ class Calon extends Model
         'jenjang',
         'atasan',
         'bawahan',
+        'ket_atas',
+        'ket_bawah',
         'aktif',
         'lunas',
         'status',
         'no_order',
         'no_reg',
         'step',
+    ];
+
+    protected $casts = [
+        'ket_atas' => 'array',
+        'ket_bawah' => 'array',
     ];
 
     public function getQrcodeAttribute()

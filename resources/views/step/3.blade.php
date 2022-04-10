@@ -22,7 +22,7 @@
         </tr>
         <tr>
           <td>Sekolah</td>
-          <td>{{ $calon->jenjang }}IT NFBS - Bogor</td>
+          <td>{{ $calon->sekolah }}</td>
         </tr>
         <tr>
           <td>Kelas</td>

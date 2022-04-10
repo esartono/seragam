@@ -37,27 +37,27 @@
       border-collapse: collapse;
     }
     .isi th{
-      padding-top: 12px;
-      padding-bottom: 12px;
+      padding-top: 6px;
+      padding-bottom: 6px;
       background-color: lightgreen;
       border: 1px solid black;
     }
     .isi td{
-      padding: 15px;
+      padding: 5px;
       border: 1px solid black;
     }
   </style>
 
 </head>
 <body>
-@if ($calon->lunas === 0)
+@if ($calon->lunas === 0 || $calon->lunas === '0')
   <table class="unpaid">
     <tr>
       <th>BELUM LUNAS</th>
     </tr>
   </table>
 @endif
-@if ($calon->lunas === 1)
+@if ($calon->lunas === 1 || $calon->lunas === '1')
   <table class="paid">
     <tr>
       <th>LUNAS</th>
@@ -106,7 +106,7 @@
   <tr>
     <td align="center">1</td>
     <td>
-      1 Set Seragam Nurul Fikri Boarding School Bogor dengan ukuran sebagai berikut : <br>
+      1 Set Seragam {{ $calon->sekolah }} dengan ukuran sebagai berikut :
       <ul>
         <li>Baju atau Blouse : {{ $calon->atasan }}</li>
         <li>Celana atau Rok : {{ $calon->bawahan }}</li>
@@ -122,18 +122,16 @@
     <td colspan="3">
       <i>Terbilang : Delapan Ratus Tujuh Puluh Lima Ribu Rupiah</i>
       <p>Pembayaran dilakukan melalui transfer ke rekening :</p>
-      <h2>Bank Syariah Indonesia (BSI) 7102878102 <small>&nbsp;&nbsp; -- &nbsp;&nbsp; a.n. Mohammad Alfian Musthofa</small></h2>
-      <hr>
-      <h5>Konfirmasi Pembayaran dapat menghubungi : Ibu Shofa (+62 857 1708 7766)</h5>
-      <h5>Layanan komplain dapat menghubungi :<br>
-        <b>Rahmat Jeans (+62 822 7888 9009)<br>
-          Hendri Umar (+62 877 7415 1039)</b>
+      <h4>Bank Syariah Indonesia (BSI) 7102878102 <small>&nbsp;&nbsp; -- &nbsp;&nbsp; a.n. Mohammad Alfian Musthofa</small></h4>
+      <h5>Konfirmasi Pembayaran dapat menghubungi : Ibu Shofa (+62 857 1708 7766)<br>
+        Layanan komplain dapat menghubungi :<br>
+        Rahmat Jeans (+62 822 7888 9009)<br>
+        Hendri Umar (+62 877 7415 1039)
       </h5>
     </td>
   </tr>
 </table>
 
-<br>
 <small>
   Catatan :
   <ol>

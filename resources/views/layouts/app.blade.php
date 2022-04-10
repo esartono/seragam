@@ -18,6 +18,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+      .space {
+        margin: 0 5px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
 </head>
 <body class="hold-transition layout-top-nav layout-footer-fixed">
     <div class="wrapper">
